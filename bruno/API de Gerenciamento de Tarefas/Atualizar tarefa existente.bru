@@ -1,0 +1,23 @@
+meta {
+  name: Atualizar tarefa existente
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/tasks/:taskId
+  body: json
+  auth: none
+}
+
+params:path {
+  taskId: 
+}
+
+body:json {
+  {
+    "title": "",
+    "description": "",
+    "completed": ""
+  }
+}

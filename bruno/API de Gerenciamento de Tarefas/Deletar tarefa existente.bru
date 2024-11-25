@@ -1,0 +1,15 @@
+meta {
+  name: Deletar tarefa existente
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/tasks/:taskId
+  body: none
+  auth: none
+}
+
+params:path {
+  taskId: 
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Criar nova tarefa
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/tasks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Estudar Math"  
+  }
+}
